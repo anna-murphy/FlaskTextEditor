@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for entry in file_contents %}
+<p>{{ entry }}</p>
+{% endfor %}
+<a href={{ url_for('edit_file', file_name=title) }}>Edit</a>
+{% endblock %}

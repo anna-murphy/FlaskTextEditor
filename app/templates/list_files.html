@@ -1,0 +1,6 @@
+{% extends"base.html" %}
+{% block content %}
+{% for item in files %}
+<a href={{ url_for("view_file", file_name=item) }}>{{ item }}</a><br>
+{% endfor %}
+{% endblock %}
